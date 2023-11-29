@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <script src="setCountdown.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>black friday</h1>
+    <h2>we have an amazing discount for you!</h2>
+    <div class="countdown">
+        <div><span id="jours"></span>Days</div>
+        <div><span id="heures"></span>Hours</div>
+        <div><span id="minutes"></span>Minutes</div>
+        <div><span id="secondes"></span>Seconds</div>
+    </div>
+    <p>Submit your email to get 60% coupon</p>
+    <input type="text" placeholder="Enter Your Email">
+    <button>Send Coupon</button>
+    
+    <script>
+        var countDownDate = new Date("Nov 28, 2023 22:33:00").getTime();
+        var lien = "./bf_products.html";
+        setCountdown("jours", "heures", "minutes", "secondes", countDownDate, lien);
+    </script>
+</body>
+</html>
